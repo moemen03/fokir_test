@@ -1,0 +1,139 @@
+body{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.container{
+    width: 85%;
+    margin:auto;
+    color: white;
+}
+
+
+
+
+/** start home section  */
+#home{
+    height: 100vh;
+    /* background-color: red; */
+    background-image: url('../images/header.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+.layer{
+    background-color: rgba(0, 0, 0, 0.8) ;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* opacity: 0.5; */
+    z-index: 1;
+}
+#home .container{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    height: 100%;
+}
+
+#home .content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#home .content p{
+    color:#fff;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+#home .content h1{
+    font-size: 70px;
+    text-transform: uppercase;
+}
+#home .content h4{
+    font-size: 40px;
+}
+
+
+
+
+
+#about{
+    padding: 60px;
+    background-color: rgb(199, 199, 199);
+}
+
+#about .photo-box{
+    border: 10px solid #2a2424;
+    width: 40%;
+    border-radius: 5px;
+}
+#about .photo-box img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+#about .photo-box .picture{
+    position: relative;
+    /* top: 50px;
+    left: 50px; */
+    transform: translate(50px,50px);
+    overflow: hidden;
+}
+
+#about .photo-box .picture .layer2 ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#about .photo-box .picture .layer2 ul li{
+    display: inline-block;
+    margin-inline: 10px;
+}
+
+#about .photo-box .picture .layer2 ul li a{
+    font-size: 30px;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#about .photo-box .picture .layer2{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    /* display: none; */
+}
+#about .photo-box .picture .layer2 .social-icons{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+#about .photo-box .picture:hover .layer2{
+    top: 0%;
+}
